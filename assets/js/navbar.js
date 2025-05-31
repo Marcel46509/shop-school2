@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    fetch("../components/navbar.html")
+    fetch("../navbar.html")
         .then(response => response.text())
         .then(data => {
             document.getElementById("navbar-container").innerHTML = data
@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // Currencies
 
             // List
-            fetch("../assets/json/currencies.json")
+            fetch("https://github.com/Marcel46509/shop-school2/raw/refs/heads/main/assets/json/currencies.json")
             .then(response => response.json())
             .then(currencies => {
                 const currenciesContainer = document.getElementById("currencies-container")
