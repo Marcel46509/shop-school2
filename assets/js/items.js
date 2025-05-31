@@ -1,4 +1,4 @@
-fetch("https://github.com/Marcel46509/shop-school2/raw/refs/heads/main/assets/json/products.json")
+fetch("../data/products.json")
 .then(response => response.json())
 .then(items => {
     const allContainer = document.getElementById("all-container")

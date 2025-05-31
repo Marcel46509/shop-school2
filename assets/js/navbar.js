@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // Currencies
 
             // List
-            fetch("https://github.com/Marcel46509/shop-school2/raw/refs/heads/main/assets/json/currencies.json")
+            fetch("../data/currencies.json")
             .then(response => response.json())
             .then(currencies => {
                 const currenciesContainer = document.getElementById("currencies-container")
